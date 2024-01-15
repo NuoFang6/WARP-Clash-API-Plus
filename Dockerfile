@@ -1,0 +1,13 @@
+FROM --platform=linux/amd64 python:3.12-alpine
+
+WORKDIR /app
+COPY . .
+
+# Install bash
+RUN apk add bash
+
+RUN pip install -r requirements.txt -i https://mirrors.ustc.edu.cn/pypi/web/simple
+RUN chmod +x ./scripts/*.sh
+
+
+CMD ["/bin/sh", "./scripts/run.sh"]

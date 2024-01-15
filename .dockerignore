@@ -1,0 +1,7 @@
+./config/*.csv
+Dockerfile
+docker-compose.yaml
+README.md
+LICENSE
+./logs/*.log
+account/account.json

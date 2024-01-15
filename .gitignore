@@ -1,0 +1,7 @@
+account/account.json
+venv
+.DS_Store
+.idea
+
+*.local
+logs/*.log
